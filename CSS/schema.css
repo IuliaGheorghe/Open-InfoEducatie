@@ -1,0 +1,117 @@
+body{
+	background-image: none;
+}
+
+#web-text{
+	font-size: 80px;
+	color: rgb(0,170,210);
+	color: tomato;
+}
+
+#variante, #raspunsuri{
+	margin: 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.var{
+	padding: 20px;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	color:rgb(0,170,210);
+}
+
+.op{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+label{
+	font-size: 25px;
+	padding: 20px;
+}
+
+input[type=text]{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #aaa ;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+
+#bttn-cont{
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	width: 150px;
+	padding: 15px 30px;
+	color:tomato;
+	background-color: #fff;
+	border: 3px solid tomato;
+	font-size: 20px;
+	border-radius: 20px;
+	letter-spacing: 1.8px;
+}
+
+
+button:hover{
+	background-color: tomato;
+	color:#fff;
+}
+
+#result{
+	width: 70vw;
+	height: 40vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: tomato;
+	color:#fff;
+	border-radius: 40px;
+	padding: 80px;
+
+}
+
+#res-txt{
+	font-size: 40px;
+	font-family: 'Montserrat';
+	padding: 40px;
+	text-align: center;
+}
+
+
+#points{
+	background-color: #fff;
+	color:tomato;
+	padding: 30px 50px;
+	border-radius: 10px;
+	font-size: 40px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	text-align: center;
+}
+
+#result button{
+	width: 200px;
+	margin: 30px;
+	color:orange;
+}
+
+#result button:hover{
+	background-color: orange;
+	color:#fff;
+}
+
+
+
+

@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/signup-role.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/schema.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -23,23 +23,43 @@
         <a href="index.html"><div>Home</div></a>
         <a href="conferinta.html"><div>Conferinta</div></a>
         <a href="quiz.html"><div>Quiz</div></a>
-        <a href="schema.html"><div>Schema Orei</div></a>
+        <a href="schema.html"><div>Schema Orei</div></a>s
       </div>
    </header>
 
+   <div id ="container">
+   <div id="content">
 
-   <div id="rol">
 
-      <div id="web-text">Alege-ti Rolul</div>
-      <div id="role-options">
-        <a href="signup-prof.html"><div class="rol" id="prof">Profesor</div></a>
-        <a href="signup.html"><div class="rol" id="elev">Elev</div></a>
+      <div id="web-text">Stabileste Schema Orei!</div>
+
+      <div id="variante">
+        <div class="var">a. Inceput</div>
+
       </div>
-   </div>
+
+      <div id="raspunsuri">
+        <div class="op">
+        <label class="num">1</label>
+        <input type="text" class="rasp" required="required"><br>
+        </div>
+      </div></div>
+    
+    <div id="bttn-cont">
+    <button type="button" onclick ="scor()">Trimite</button>
+    </div></div>
+
+    <div id="result" style="display: none">
+      <div id="res-txt">Felicitari</div>
+      <div id="points">67 puncte</div>
+      <a href="index.html"><button type="button">GO HOME </button></a>
+    </div>
+
+  </div>
 
 
 <script type="text/javascript" src="JS/menu.js"></script>
-
+<script type="text/javascript" src="JS/schema.js"></script>
 
 </body>
 

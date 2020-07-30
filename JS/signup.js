@@ -18,7 +18,8 @@ var firebaseConfig = {
       const bttnSignUp = document.getElementById('login');
 
       bttnSignUp.addEventListener('click', e => {
-
+          
+          firebase.auth().signOut();
           const lname = txtLname.value;
           const fname = txtFname.value;
           const email = txtEmail.value;
@@ -33,6 +34,6 @@ var firebaseConfig = {
                             tip: "elev",
                             username: user,
                             first_name: fname,
-                            last_name: lname
+                            last_name: fname
                         });
       });
