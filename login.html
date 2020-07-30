@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WebApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/style.css"/>
+  <link rel="stylesheet" href="CSS/login.css"/>
+</head>
+
+
+<body>
+   <header>
+   	 <div id="logo-container">
+      <a id="logo" href="index.html">Online Courses</a>
+    </div>
+
+   	  <a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
+   </header>
+
+
+   <div id="content">
+
+      <div id="menu" style="display: none;">
+
+        <a href="index.html"><div>Home</div></a>
+        <a href="profile.html"><div>Profile</div></a>
+        <a href="notes.html"><div>Notes</div></a>
+        <a href="dreams.html"><div>Dreams</div></a>
+        <a href="tasks.html"><div>Tasks</div></a>
+      </div>
+
+   	  <div id="web-text">Login</div>
+
+   	  <form>
+        <label for="user">Email or Username:</label><br>
+        <input type="text" id="user" name="user" required="required"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required="required"><br><br>
+   	  	<button class="bttn" id="login">Login</button>
+   	  </form>
+   </div>
+   <script type="text/javascript" src="../JS Files/menu.js"></script>
+   <script type="text/javascript" src="../JS Files/app.js"></script>
+</body>
+
+</html>
