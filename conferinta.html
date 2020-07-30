@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/signup-role.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/conferinta.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -21,22 +21,28 @@
       <div id="menu" style="display: none;">
 
         <a href="index.html"><div>Home</div></a>
-        <a href="conferinta.html"><div>Conferinta</div></a>
       </div>
    </header>
+   
+   <div id="plus">Scor: 0</div>
+  
+     <img id="ballo" onclick="scoreF1()" src="Media/Imagini/balon.png" />
 
+     <img id="ballo2" onclick="scoreF2()" src="Media/Imagini/balon.png" />
+  
+   
 
-   <div id="rol">
+   <div id="content" style='height: 80vh; display: flex; align-items: center; justify-content: center; flex-direction: column;'>
+    <div id="conferinta" style="display: flex; justify-content: center;">
+      <img src="https://images.pexels.com/photos/3184658/pexels-photo-3184658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:600px;"/>
+    </div>
 
-      <div id="web-text">Alege-ti Rolul</div>
-      <div id="role-options">
-        <a href="signup-prof.html"><div class="rol" id="prof">Profesor</div></a>
-        <a href="signup.html"><div class="rol" id="elev">Elev</div></a>
-      </div>
+    <button type="button" onclick="moveBalloons()">Baloane</button>
    </div>
 
 
 <script type="text/javascript" src="JS/menu.js"></script>
+<script type="text/javascript" src="JS/balloons.js"></script>
 
 
 </body>
