@@ -1,6 +1,4 @@
-(function(){
-
-    var firebaseConfig = {
+var firebaseConfig = {
         apiKey: "AIzaSyAgeDTp-fqvaUUZJLQ57Ek8-017lV8q-GA",
         authDomain: "open-ie.firebaseapp.com",
         databaseURL: "https://open-ie.firebaseio.com",
@@ -28,21 +26,13 @@
           const pass = txtPassword.value;
           const rpass = txtRpassword.value;
           console.log(pass);
-          const auth = firebase.auth();
-          if(pass != rpass) // daca parolele nu-s aceleasi
-            alert("Parolele nu sunt identice!");
-            else {
-                const promise = auth.createUserWithEmailAndPassword(email, pass);
-                promise
-                    .then(user => {
-                        firebase.database().ref('users').ref(email).set({
+          console.log(email+";");
+          firebase.auth().createUserWithEmailAndPassword(email, pass);
+          const uid = firebase.auth().currentUser.uid;
+          firebase.database().ref('users/'+uid).set({
+                            tip: "elev",
                             username: user,
                             first_name: fname,
-                            last_name: fname
+                            last_name: lname
                         });
-                    })
-                    .catch(e => alert("Eroare!"));
-            }
       });
-
-}());

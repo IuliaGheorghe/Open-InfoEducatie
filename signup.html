@@ -10,16 +10,17 @@
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
 </head>
 
 
 <body>
    <header>
-   	 <div id="logo-container">
+     <div id="logo-container">
       <a id="logo" href="index.html">Online Courses</a>
     </div>
 
-   	  <a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
    </header>
 
 
@@ -28,12 +29,11 @@
       <div id="menu" style="display: none;">
 
         <a href="index.html"><div>Home</div></a>
-        <a href="conferinta.html"><div>Conferinta</div></a>
       </div>
 
-   	  <div id="web-text">SignUp</div>
+      <div id="web-text">SignUp</div>
 
-   	  <form>
+      <form>
 
       <div id="containers">
       
@@ -57,11 +57,11 @@
         <input type="password" id="rpassword" name="rpassword" required="required"><br><br>
       </div>
       </div>
-   	  	<button class="bttn" id="login">SignUp</button>
-   	  </form>
+        <button type = "button" class="bttn" id="login">SignUp</button>
+      </form>
    </div>
    <script type="text/javascript" src="JS/menu.js"></script>
-   <script src="JS/signup.js"> </script>
+   <script type="text/javascript" src="JS/signup.js"></script>
 </body>
 
 </html>

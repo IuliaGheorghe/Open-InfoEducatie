@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Online Courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/quiz.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+     <div id="logo-container">
+      
+      <a id="logo" href="index.html">Online Courses</a>
+    </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
+
+      <div id="menu" style="display: none;">
+
+        <a href="index.html"><div>Home</div></a>
+        <a href="conferinta.html"><div>Conferinta</div></a>
+        <a href="quiz.html"><div>Quiz</div></a>
+      </div>
+   </header>
+   
+  <div id="questions-container">
+        <form>
+          <div id="question"></div>
+          <div id="answers-container">
+            <div class="center"><button type="button" onclick="getResult(1)" class="ans" id="ans1">Answer 1</button></div>
+            <div class="center"><button type="button" onclick="getResult(2)" class="ans" id="ans2">Answer 2</button></div>
+            <div class="center"><button type="button" onclick="getResult(3)" class="ans" id="ans3">Answer 3</button></div>
+            <div class="center"><button type="button" onclick="getResult(4)" class="ans" id="ans4">Answer 4</button></div>
+            <div class="center">
+              <button id="inapoi" type="button" onclick="previousQuestion()">Inapoi</button>
+              <button id="inainte" type="button" onclick="nextQuestion()"> Inainte</button>
+              <button id="final" type="button" onclick="checkAll()"> Finalizare</button>
+            </div>
+          </div>
+        </form>
+    </div>
+
+    <div id="result">
+      <h1>Scorul tau este: </h1>
+      <div id="score"></div>
+      <a href="index.html"><button id="final" type="button"> Go Home</button></a>
+    </div>
+
+
+<script type="text/javascript" src="JS/menu.js"></script>
+<script type="text/javascript" src="JS/quiz.js"></script>
+
+
+
+</body>
+
+</html>
