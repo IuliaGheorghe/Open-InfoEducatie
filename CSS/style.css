@@ -25,7 +25,7 @@ a{
 
 
 #logo{
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Permanent Marker';
 	font-size: 75px;
 	color: rgb(0,170,210);
 	padding-left: 60px;
@@ -53,7 +53,7 @@ a{
 }
 
 #web-text{
-	font-family: 'Handlee', cursive;
+	font-family: 'Handlee';
     font-size: 150px;
     color: #fff;
     padding-top: 120px;
