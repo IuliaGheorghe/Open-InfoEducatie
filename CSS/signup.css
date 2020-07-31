@@ -80,7 +80,13 @@ button{
 		font-size: 70px;
 	}
 
+	#content{
+		display: flex;
+		flex-direction: column;
+	}
+
 	form{
+
 		width: 80vw;
 		padding: 25px 20px;
 	}

@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/schema.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/cadou.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
   <header>
@@ -32,39 +33,20 @@
       </div>
    </header>
 
-   <div id ="container">
+
    <div id="content">
+     <div id="web-text">Vezi aici daca ai primit vreun cadou! Introdu numele si apasa pe cutie!</div>
+     <input type="text" id="name" placeholder="Name" />
+     <img src="Media/Imagini/cadou.png" onclick="openGift()" />
+      
+   </div>
 
-
-      <div id="web-text">Stabileste Schema Orei!</div>
-
-      <div id="variante">
-        <div class="var">a. Inceput</div>
-
-      </div>
-
-      <div id="raspunsuri">
-        <div class="op">
-        <label class="num">1</label>
-        <input type="text" class="rasp" required="required"><br>
-        </div>
-      </div></div>
-    
-    <div id="bttn-cont">
-    <button type="button" onclick ="scor()">Trimite</button>
-    </div></div>
-
-    <div id="result" style="display: none">
-      <div id="res-txt">Felicitari</div>
-      <div id="points">67 puncte</div>
-      <a href="index.html"><button type="button">GO HOME </button></a>
-    </div>
-
-  </div>
+   <div id="premiu"></div>
 
 
 <script type="text/javascript" src="JS/menu.js"></script>
-<script type="text/javascript" src="JS/schema.js"></script>
+<script type="text/javascript" src="JS/cadou.js"></script>
+
 
 </body>
 
