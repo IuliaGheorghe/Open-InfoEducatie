@@ -31,3 +31,47 @@ body{
     background-color: rgb(0,170,210);
     color: #fff;
 }
+
+@media screen and (max-width: 1300px){
+	
+
+	#web-text{
+		font-size: 50px;
+	}
+    
+    #role-options{
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+    .rol{
+    	width: 60vw;
+    	padding: 12px 20px;
+    	font-size: 30px;
+    	margin: 20px;
+    }
+	
+}
+
+
+@media screen and (max-width: 800px){
+	
+
+	#web-text{
+		font-size: 50px;
+	}
+    
+    #role-options{
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+    .rol{
+    	width: 60vw;
+    	padding: 12px 20px;
+    	font-size: 30px;
+    	margin: 20px;
+    }
+	
+}
+

@@ -158,3 +158,31 @@ p{
 	color:#fff;
 	border-color:mediumpurple;
 }
+
+@media screen and (max-width: 1200px){
+	
+
+	#web-text{
+		font-size: 70px;
+	}
+
+	#answer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+
+	#answer button{
+		width:30vw;
+	}
+
+	#time-out , #wrong-ans, #good-ans{
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	padding: 4px;
+}
+
+
+}

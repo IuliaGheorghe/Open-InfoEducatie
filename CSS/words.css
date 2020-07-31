@@ -80,4 +80,19 @@ button:hover{
 
 }
 
+@media screen and (max-width: 1200px){
+	
+
+	#web-text{
+		font-size: 70px;
+	}
+
+	#cuvant{
+		font-size: 5vw;
+	}
+    
+    #value-bttns .fa{
+    	font-size: 40px;
+    }
+}
 

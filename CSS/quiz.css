@@ -108,3 +108,18 @@ h1 {
 	border-color: mediumpurple;
 	color: #fff;
 }
+
+@media screen and (max-width: 1200px){
+	
+
+	#question{
+		font-size: 24px;
+	}
+
+	#result{
+		width: 80vw;
+		margin: auto;
+	}
+
+
+}

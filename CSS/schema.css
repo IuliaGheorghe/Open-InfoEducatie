@@ -112,6 +112,22 @@ button:hover{
 	color:#fff;
 }
 
+@media screen and (max-width: 1200px){
+	
 
+	#web-text{
+		font-size: 70px;
+	}
+
+	button{
+		font-size: 18px;
+		padding:10px 30px;
+	}
+	#plus{
+		padding: 20px;
+	}
+
+
+}
 
 

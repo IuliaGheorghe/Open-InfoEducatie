@@ -17,6 +17,7 @@ body{
 	display: flex;
 	justify-content: center;
 	font-size: 30px;
+	padding: 50px;
 }
 
 
@@ -55,4 +56,22 @@ button{
 button:hover{
 	background-color: mediumpurple;
     color:#fff;
+}
+
+@media screen and (max-width: 1200px){
+	
+
+	#web-text{
+		font-size: 70px;
+	}
+
+	button{
+		font-size: 18px;
+		padding:10px 30px;
+	}
+	#plus{
+		padding: 20px;
+	}
+
+
 }

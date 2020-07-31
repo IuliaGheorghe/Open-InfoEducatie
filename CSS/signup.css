@@ -73,3 +73,37 @@ button{
 	background-color: orange;
 }
 
+@media screen and (max-width: 1200px){
+	
+
+	#web-text{
+		font-size: 70px;
+	}
+
+	form{
+		width: 80vw;
+		padding: 25px 20px;
+	}
+
+	label{
+		font-size: 18px;
+	}
+
+
+    input[type=text], input[type=password]{
+	padding: 8px 10px;
+	width:250px;
+}
+
+.bttn{
+		font-size: 20px;
+		margin:10px;
+		padding: 12px 15px;
+		text-align: center;
+		border: 3px solid #fff;
+		width: 150px;
+	}
+
+
+}
+

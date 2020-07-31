@@ -29,7 +29,7 @@ var firebaseConfig = {
         console.log('users/'+uid+'/tip');
         var tipContRef = firebase.database().ref('users/'+uid+'/tip');
         tipContRef.on('value', function(snapshot){
-          alert(snapshot.val()); // snapshot.val() *teoretic* returneaza valoarea ceruta (prof / elev)
+          // alert(snapshot.val()); // snapshot.val() *teoretic* returneaza valoarea ceruta (prof / elev)
         });
        } else {
         // No user is signed in.
