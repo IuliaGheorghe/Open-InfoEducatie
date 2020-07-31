@@ -20,7 +20,6 @@ var firebaseConfig = {
 
     bttnSignUp.addEventListener('click', e => {
 
-        firebase.auth().signOut();
         const lname = txtLname.value;
         const fname = txtFname.value;
         const email = txtEmail.value;
@@ -28,19 +27,19 @@ var firebaseConfig = {
         const pass = txtPassword.value;
         const rpass = txtRpassword.value;
         const cod = txtCod.value;
-        if(cod != "69420")
+        if(cod != "12345")
           alert("Nu esti profesor!");
         else
         {
           firebase.auth().createUserWithEmailAndPassword(email, pass);
           const uid = firebase.auth().currentUser.uid;
-          console.log('users/'+uid);
           firebase.database().ref('users/'+uid).set({
                           tip: "prof",
                           username: user,
                           first_name: fname,
                           last_name: lname
                       });
+          alert("Te-ai inregistrat cu succes!");
         }
         
     });

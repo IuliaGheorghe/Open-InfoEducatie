@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="CSS/style.css"/>
   <link rel="stylesheet" href="CSS/signup.css"/>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
 </head>
 
 
@@ -25,45 +29,40 @@
       <div id="menu" style="display: none;">
 
         <a href="index.html"><div>Home</div></a>
-        
-        <a href="conferinta.html"><div>Conferinta</div></a>
-        <a href="quiz.html"><div>Quiz</div></a>
-        <a href="schema.html"><div>Schema Orei</div></a>
-        <a href="words.html"><div>Alege Cuvintele</div></a>
       </div>
 
-      <div id="web-text">Sign Up</div>
+      <div id="web-text">SignUp</div>
 
       <form>
 
       <div class="cont" id="prof-code">
         <label for="profcode">Cod Profesor: </label><br>
-        <input type="text" id="lname" name="lname" required="required"><br>
+        <input type="text" id="codprof" name="lname" required="required"><br>
       </div>
 
       <div id="containers">
       
       <div class="cont">
         <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" required="required"><br>
+        <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname" required="required"><br>
+        <input type="text" id="lname" name="lname"><br>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required="required"><br>
+        <input type="email" id="email" name="email"><br>
         <br><br>
       </div>
       <div class="cont">
 
         
         <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required="required"><br>
+        <input type="text" id="username" name="username"><br>
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required="required"><br>
+        <input type="password" id="password" name="password"><br>
         <label for="rpassword">Repeat Password:</label><br>
-        <input type="password" id="rpassword" name="rpassword" required="required"><br><br>
+        <input type="password" id="rpassword" name="rpassword"><br><br>
       </div>
       </div>
-        <button class="bttn" type="button" id="login">SignUp</button>
+        <button type = "button" class="bttn" id="login">SignUp</button>
       </form>
    </div>
    <script type="text/javascript" src="JS/menu.js"></script>

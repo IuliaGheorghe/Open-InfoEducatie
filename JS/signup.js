@@ -36,4 +36,5 @@ var firebaseConfig = {
                             first_name: fname,
                             last_name: fname
                         });
+          alert("Te-ai inregistrat cu succes!")
       });

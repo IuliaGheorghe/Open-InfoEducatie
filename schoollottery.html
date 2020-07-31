@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Online Courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/schoollottery.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+     <div id="logo-container">
+      
+      <a id="logo" href="index.html">Online Courses</a>
+    </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="menu()"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
+
+      <div id="menu" style="display: none;">
+
+        <a href="index.html"><div>Home</div></a>
+        <a href="conferinta.html"><div>Conferinta</div></a>
+        <a href="quiz.html"><div>Quiz</div></a>
+        <a href="schema.html"><div>Schema Orei</div></a>
+        <a href="words.html"><div>Alege Cuvintele</div></a>
+        <a href="schoollottery.html"><div>SchoolLottery</div></a>
+      </div>
+   </header>
+
+
+   <div id="content">
+
+      <div id="web-text">School Lottery</div>
+      <div id="game-desc">Aceasta este cea mai buna sansa a ta de a te distanta in lupta pentru titlul de <b>Cel Mai Atent Elev Al Zilei</b> Extrage lozul cu cel mai bun punctaj, raspunde corect la intrebare in timpul dat si bucura-te de punctajul semnificativ care te va aduce mai aproape de premiul zilei. Apasa pe o carte pentru a incepe. </div>
+      
+      <div id="ans-c" style="display: none">
+      <div id="time">Timp Ramas: 00:30</div>
+      <div id="question">Question</div>
+      <div id="answer">
+        <input type="text" id="ans" required/>
+        <button type="button" onclick="checkAns()">Trimite</button>
+      </div>
+    </div>
+
+      <div id="cards-cont">
+        <div class="card" onclick="start(1)"></div>
+        <div class="card" onclick="start(2)"></div>
+        <div class="card" onclick="start(3)"></div>
+        <div class="card" onclick="start(4)"></div>
+        <div class="card" onclick="start(5)"></div>
+      </div>
+
+   </div>
+
+   <div id="time-out">
+      <p>Din pacate ai ramas fara timp! Nu ai obtinut nimic de aceasta data!</p>
+      <p class="punctaj-carte">Punctajul pierdut:</p>
+      <p class="punctaj">500</p>
+      <a href="index.html"><button type="button">GO HOME </button></a>
+   </div>
+   <div id="wrong-ans">
+      <p>Din pacate ai raspuns gresit la intrebarea din loz! Nu ai obtinut nimic de aceasta data!</p>
+      <p class="punctaj-carte">Punctajul pierdut:</p>
+      <p class="punctaj">500</p>
+      <a href="index.html"><button type="button">GO HOME </button></a>
+   </div>
+   <div id="good-ans">
+     <p>Felicitari! Ai castigat!</p>
+      <p class="punctaj-carte">Punctajul castigat:</p>
+      <p class="punctaj">500</p>
+      <a href="index.html"><button type="button">GO HOME </button></a>
+   </div>
+
+
+<script type="text/javascript" src="JS/menu.js"></script>
+<script type="text/javascript" src="JS/schoollottery.js"></script>
+
+
+</body>
+
+</html>
