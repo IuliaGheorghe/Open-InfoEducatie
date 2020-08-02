@@ -56,7 +56,7 @@ let words = [
 },
 
 {
-  word:"Nichifor",
+  word:"Nechifor",
   value:0
 },
 

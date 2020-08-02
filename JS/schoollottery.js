@@ -47,7 +47,9 @@ function startTimer(duration, display) {
             timer = duration;
             document.getElementById("content").style.display="none";
             if(document.getElementById("wrong-ans").style.display="none")
-            document.getElementById("time-out").style.display="flex";
+            {document.getElementById("time-out").style.display="flex";
+             document.getElementsByClassName("punctaj")[0].innerHTML=questions[index].s;
+    }
             
         }
     }, 1000);
@@ -76,18 +78,21 @@ function checkAns(){
             document.getElementById("content").style.display="none";
             document.getElementById("time-out").style.display="none";
             document.getElementById("good-ans").style.display="flex";
+            document.getElementsByClassName("punctaj")[2].innerHTML=questions[index].s;
 	    }
 	    else if(Number(document.getElementById('ans').value) === questions[index].a) {
 
             document.getElementById("content").style.display="none";
             document.getElementById("time-out").style.display="none";
             document.getElementById("good-ans").style.display="flex";
+            document.getElementsByClassName("punctaj")[2].innerHTML=questions[index].s;
 	    }
 	    else {
 
             document.getElementById("content").style.display="none";
             document.getElementById("time-out").style.display="none";
             document.getElementById("wrong-ans").style.display="flex";
+            document.getElementsByClassName("punctaj")[1].innerHTML=questions[index].s;
 	    }
 	 
 		
